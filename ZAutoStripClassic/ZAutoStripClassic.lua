@@ -43,60 +43,60 @@ end
 -- ----------------------------------------------------------
 
 function ZAutoStripUnequipValuables2(i)
-	local a=PickupInventoryItem
-	local b=GetInventoryItemLink
+	local a = PickupInventoryItem
+	local b = GetInventoryItemLink
 	if i == 1 then
-		if not b("player",16) then
+		if not b("player", 16) then
 			return true
 		end
 		a(16)	-- Main Hand
 	elseif i == 2 then
-		if not b("player",17) then
+		if not b("player", 17) then
 			return true
 		end
 		a(17)	-- Off Hand
 	elseif i == 3 then
-		if not b("player",18) then
+		if not b("player", 18) then
 			return true
 		end
 		a(18)	-- Ranged
 	elseif i == 4 then
-		if not b("player",5) then
+		if not b("player", 5) then
 			return true
 		end
 		a(5)	-- Chest
 	elseif i == 5 then
-		if not b("player",7) then
+		if not b("player", 7) then
 			return true
 		end
 		a(7)	-- Legs
 	elseif i == 6 then
-		if not b("player",1) then
+		if not b("player", 1) then
 			return true
 		end
 		a(1)	-- Head
 	elseif i == 7 then
-		if not b("player",3) then
+		if not b("player", 3) then
 			return true
 		end
 		a(3)	-- Shoulders
 	elseif i == 8 then
-		if not b("player",10) then
+		if not b("player", 10) then
 			return true
 		end
 		a(10)	-- Gloves
 	elseif i == 9 then
-		if not b("player",8) then
+		if not b("player", 8) then
 			return true
 		end
 		a(8)	-- Boots
 	elseif i == 10 then
-		if not b("player",6) then
+		if not b("player", 6) then
 			return true
 		end
 		a(6)	-- Belt
 	elseif i == 11 then
-		if not b("player",9) then
+		if not b("player", 9) then
 			return true
 		end
 		a(9)	-- Bracers
@@ -108,9 +108,9 @@ function ZAutoStripUnequipValuables()
 	ZAutoStripClassicEnabled = nil
 	AutoCastShine_AutoCastStop(ZAutoStripShine)
 	local count = 1
-	local a=PickupContainerItem
-	for i=1,GetContainerNumSlots(0) do
-		if not GetContainerItemLink(0,i) then
+	local a = PickupContainerItem
+	for i = 1, GetContainerNumSlots(0) do
+		if not GetContainerItemLink(0, i) then
 			if count <= 11 then
 				if ZAutoStripUnequipValuables2(count) then
 					i = i - 1
@@ -126,8 +126,8 @@ function ZAutoStripUnequipValuables()
 	if count > 11 then
 		return
 	end
-	for i=1,GetContainerNumSlots(1) do
-		if not GetContainerItemLink(1,i) then
+	for i = 1, GetContainerNumSlots(1) do
+		if not GetContainerItemLink(1, i) then
 			if count <= 11 then
 				if ZAutoStripUnequipValuables2(count) then
 					i = i - 1
@@ -143,8 +143,8 @@ function ZAutoStripUnequipValuables()
 	if count > 11 then
 		return
 	end
-	for i=1,GetContainerNumSlots(2) do
-		if not GetContainerItemLink(2,i) then
+	for i = 1, GetContainerNumSlots(2) do
+		if not GetContainerItemLink(2, i) then
 			if count <= 11 then
 				if ZAutoStripUnequipValuables2(count) then
 					i = i - 1
@@ -160,8 +160,8 @@ function ZAutoStripUnequipValuables()
 	if count > 11 then
 		return
 	end
-	for i=1,GetContainerNumSlots(3) do
-		if not GetContainerItemLink(3,i) then
+	for i = 1, GetContainerNumSlots(3) do
+		if not GetContainerItemLink(3, i) then
 			if count <= 11 then
 				if ZAutoStripUnequipValuables2(count) then
 					i = i - 1
@@ -177,8 +177,8 @@ function ZAutoStripUnequipValuables()
 	if count > 11 then
 		return
 	end
-	for i=1,GetContainerNumSlots(4) do
-		if not GetContainerItemLink(4,i) then
+	for i = 1,GetContainerNumSlots(4) do
+		if not GetContainerItemLink(4, i) then
 			if count <= 11 then
 				if ZAutoStripUnequipValuables2(count) then
 					i = i - 1
@@ -213,4 +213,3 @@ function ZAS:PLAYER_REGEN_ENABLED(event)
 		ZAutoStripUnequipValuables()
 	end
 end
-

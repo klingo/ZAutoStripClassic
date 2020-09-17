@@ -18,8 +18,8 @@ This addon was extracted from ZHunterMod (https://www.curseforge.com/wow/addons/
 
 Use: You can either use the /slash command below to auto strip the next time you leave combat or you can display the button for quick and easy use.
 
-**/Slash Commands:** <br>
-``/zautostrip`` - Toggle the auto-strip function for the next time you leave combat. <br>
+**/Slash Commands:** <br/>
+``/zautostrip`` - Toggle the auto-strip function for the next time you leave combat. <br/>
 ``/zautostrip display`` - Displays the auto-strip button for easy use.
 
 AutoStrip Button:
@@ -29,5 +29,5 @@ RightClick to enable the autocast for the next time you leave combat.
 
 ***
 
-Original ZHunterMod for Vanilla WoW: https://www.curseforge.com/wow/addons/zhunter-mod
+Original ZHunterMod for Vanilla WoW: https://www.curseforge.com/wow/addons/zhunter-mod <br/>
 Original ZAutoStrip extracted for Vanilla WoW: https://www.curseforge.com/wow/addons/project-2002

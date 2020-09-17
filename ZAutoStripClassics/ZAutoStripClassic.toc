@@ -1,0 +1,11 @@
+## Interface: 11305
+## X-Min-Interface: 11304
+## Title: ZAutoStripClassic
+## Notes: Allows you to automatically strip the EXACT moment you leave combat.
+## Author: Klingo
+## X-Email: klingo@klingonium.com
+## SavedVariablesPerCharacter: ZAutoStripClassicOptions
+## DefaultState: enabled
+## Version: 1
+
+ZAutoStripClassic.xml
